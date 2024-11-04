@@ -1,23 +1,84 @@
 # Simple Dice Rolling game
-import random # random library for generating random numbers
+import random
 
-def roll_dice(): # A function to roll the dice
-    while True: # while playing the game
+def create_dice():
+    dice_faces = {
+        1:{ """
+        +-------+
+        |   1   |
+        |   ●   |
+        |       |
+        +-------+
+        """},
+        2:{ """
+        +-------+
+        | ●     |
+        |   2   |
+        |     ● |
+        +-------+
+        """},
+        3:{ """
+        +-------+
+        | ●  3  |
+        |   ●   |
+        |     ● |
+        +-------+
+        """},
+        4:{ """
+        +-------+
+        | ●   ● |
+        |   4   |
+        | ●   ● |
+        +-------+
+        """},
+        5: {"""
+        +-------+
+        | ● 5 ● |
+        |   ●   |
+        | ●   ● |
+        +-------+
+        """},
+        6:{ """
+        +-------+
+        | ●   ● |
+        | ● 6 ● |
+        | ●   ● |
+        +-------+
+        """}
+    }
+    return dice_faces
 
-            user_input = input("Roll the dice? (y/n): ").lower() # Accepting user inputs in lower case
+def roll_dice(dice_faces):
 
-            if user_input == "y": # Continue if user_input is y
+    options = ['y', 'n']
 
-                die1 = random.randint(1,6) # variables for dice
-                die2 = random.randint(1,6)
+    while True:
+        roll = input('Roll the dice (y/n): ')
 
-                print(f"You rolled a {die1} and a {die2}")
+        if roll not in options:
+            print('Enter a valid input (y/n) \n')
+        
+        else:
 
-            elif user_input == "n": # Break from the loop if user input is n
-                print("Thanks for playing...")
-                break
+            if roll == 'n':
+                   print('Thanks for playing...😁👌')
+                   break
 
-            else: # Check if user input is invalid
-                print("Invalid input")
+            else:
 
-roll_dice()
+                dice1 = random.randint(1,6)
+                dice2 = random.randint(1,6)
+
+                print(f'Dice rolled: {dice1} and {dice2}')
+                print('\n'.join(dice_faces[dice1]))
+                print('\n'.join(dice_faces[dice2]))
+
+
+
+
+
+def main():
+    dice_faces = create_dice()
+    roll_dice(dice_faces)
+
+main()
