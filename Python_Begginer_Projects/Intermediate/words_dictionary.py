@@ -37,15 +37,18 @@ def Main():
 
             if user_choice in options:
                 word = input('Enter a word: ')
+                
                 if user_choice == 1:
                     Meaning(word)
                 elif user_choice == 2:
                     Synonym(word)
                 else:
                     Antonym(word)
+                    
             elif user_choice == 4:
                 Quit()
                 break
+                
             else:
                 print('Enter a choice(1-4)')
 
@@ -54,10 +57,5 @@ def Main():
         
         print('')
 
-
-
-
-
-
-
+# Calling the main function
 Main()
