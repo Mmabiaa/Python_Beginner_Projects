@@ -22,6 +22,8 @@ This repository contains the following projects:
 9. **Text-Based Adventure Game** - An interactive story where choices affect the outcome.
 10. **Currency Converter** - Converts amounts from one currency to another using real-time exchange rates.
 
+**And Many More**
+
 ## 💻 Getting Started
 
 To get started with these projects, follow these steps:
