@@ -1,0 +1,10 @@
+from PIL import Image
+
+
+Original_Image = 'pushpa.png'
+Image. open(Original_Image)
+img = Image.open(Original_Image)
+Mirror_Image = img.transpose(Image.FLIP_LEFT_RIGHT)
+Mirrored_Image = 'pushpa_mirror.png'
+Mirror_Image.save(Mirrored_Image)
+Image.open(Mirrored_ Image)
