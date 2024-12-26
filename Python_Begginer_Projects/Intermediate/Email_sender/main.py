@@ -41,3 +41,4 @@ def Main():
     print('Email sent successfully!')
 
 Main()
+# Author - Mmabiaa
