@@ -30,3 +30,5 @@ def display_square(): # A function that displays the square
 
 if __name__ == '__main__': # main function
   display_square()
+
+    # Author - Mmabiaa
