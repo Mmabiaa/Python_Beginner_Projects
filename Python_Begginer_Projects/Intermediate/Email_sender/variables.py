@@ -1,1 +1,1 @@
-password = 'dffk pipb gsbm vgba'
+password = 'password'
