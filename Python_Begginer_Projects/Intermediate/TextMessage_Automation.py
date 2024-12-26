@@ -15,3 +15,4 @@ def send_message():
 # Schedule at 6pm everyday.
 schedule.every().day.at('18:00').do(send_message)
 
+# Author - Mmabiaa
