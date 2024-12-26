@@ -12,3 +12,4 @@ def Main():
 
     print(f"QR code saved as {filename}")
 Main()
+# Author - Mmabiaa
