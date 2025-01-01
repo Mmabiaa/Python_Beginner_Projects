@@ -18,3 +18,4 @@ fig = px.scatter(
     title='Animated Scatter Plot: Life Expectancy vs GDP Per Capita'
 )
 fig.show()
+# Author - Mmabiaa
