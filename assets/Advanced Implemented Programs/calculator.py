@@ -1,9 +1,7 @@
 # A simple calculator program
 def Menu(): # Menu to hold menu options and user choices
     menu_options = (1,2,3,4,5)
-
     user_choice = None
-
     print("\n Menu \n 1. Addition 2. Subtraction 3. Multiplication 4. Division 5 Exit.")
 
     while True:
@@ -13,13 +11,11 @@ def Menu(): # Menu to hold menu options and user choices
             if user_choice not in menu_options:
                 print("Invalid input")
                 continue
-
         except ValueError:
             print("Please enter a valid choice")
             continue
 
         return user_choice
-
 
 def get_user_values(): # A function to store user values for calculators
     num1 = int(input('Enter first number: '))
