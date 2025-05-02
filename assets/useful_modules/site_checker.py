@@ -1,6 +1,7 @@
 import urllib.request
 import urllib.error
 
+
 def URL_CHECK(url):
     print('Checking connectivity...')
     
