@@ -68,6 +68,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Feel free to explore, learn, and have fun with these projects!
-
-
-   
